@@ -39,9 +39,9 @@ void setup() {
   LCD.init();
   LCD.backlight();
   LCD.setCursor(0, 0);
-  LCD.println("Connecting to ");
+  LCD.println("Menghubungkan");
   LCD.setCursor(0, 1);
-  LCD.println("WiFi ");
+  LCD.println("ke WiFi ");
 
   WiFi.begin("Wokwi-GUEST", "", 6);
   while(WiFi.status() !=  WL_CONNECTED) {
@@ -50,7 +50,7 @@ void setup() {
   }
 
   Serial.println("");
-  Serial.println("WiFi connected");
+  Serial.println("WiFi tersambung");
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
 
